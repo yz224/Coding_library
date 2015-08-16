@@ -13,6 +13,16 @@ Reading
 	Other VCS think of information as different file (like we usually do)
 	Git think of information as snapshot (the whole picture of all information), save them, and link
 		This make git reconsider all aspect of information when version changes
-	Git can do offline
+
+	Git store hash value look like ‘24b9da6552252987aa493b52f8696cd6d3b00373’ for check
+
+	The three stage: local , staging (marked as snapshot), commited (to database)
+
+1.4 Command Line
+1.5 Installing
+1.6 Set-up
+
 	
+
+
 

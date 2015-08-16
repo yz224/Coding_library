@@ -1,0 +1,16 @@
+1. Looping n times inside function is faster than function calls for n times
+2. Apply function: (generally goes faster than for loop with function calls)
+
+	Example:
+
+	func <- function(x,a,n){
+		return(x/a + n)
+	}
+
+	mtx <- matrix(seq(1,20,1),nrow=4)
+
+	# sapply(matrix, function, other arguments except the one you want to loop through)
+	sapply(mtx, func, a=2,n=2)
+	sapply(mtx, func, x=100,n=2)
+
+	# apply(matrix, row or column, function, other arguments except the one you want to loop through)
