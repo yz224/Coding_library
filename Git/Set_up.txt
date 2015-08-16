@@ -1,0 +1,19 @@
+Set_up
+
+‘registration’
+
+git config --global user.name ‘Yikun Zhou’
+git config --global user.email ‘yz224@duke.edu’
+
+‘cache password’
+
+curl -s -O \
+http://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain
+chmod u+x git-credential-osxkeychain
+
+sudo mv git-credential-osxkeychain `dirname \`which git\``
+
+‘initialize’
+
+cd ‘~/your repository’
+git init
