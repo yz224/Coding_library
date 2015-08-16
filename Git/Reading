@@ -1,0 +1,18 @@
+Reading
+
+1. Git
+1.1 About version control:
+	Local version control: RCS
+	central version control (collaborate with others): do with a server, high risk if goes down
+	Distributed version control (lower risk): to save fully same one on each local and server
+
+1.2 Short history about Git:
+	From the development of Linux (open resource, thousands of branched)
+
+1.3 Git basic:
+	Other VCS think of information as different file (like we usually do)
+	Git think of information as snapshot (the whole picture of all information), save them, and link
+		This make git reconsider all aspect of information when version changes
+	Git can do offline
+	
+

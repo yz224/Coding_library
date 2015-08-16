@@ -1,0 +1,17 @@
+4_Use
+
+'go to local repo'
+
+cd ~/...
+
+'look current situation'
+
+git status
+
+'add changed file'
+
+git add --all : add all changed files
+
+'commit changed file'
+
+git commit -m 'message'

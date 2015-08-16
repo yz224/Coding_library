@@ -13,7 +13,14 @@ chmod u+x git-credential-osxkeychain
 
 sudo mv git-credential-osxkeychain `dirname \`which git\``
 
-‘initialize’
+where is my git repository?
+
+‘initialize first commit’
 
 cd ‘~/your repository’
 git init
+git add … 
+git commit -m ‘message’  (here -m represents ‘message’)
+git remote add origin https://github.com/yz224/Coding_library.git
+
+why rejected?
