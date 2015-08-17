@@ -1,0 +1,13 @@
+---
+title: "Tips"
+author: "Yikun Zhou"
+date: "August 16, 2015"
+output: html_document
+---
+
+```{r 2_functions,echo=FALSE,cache=FALSE}
+# r 2_functions: chunk name
+# echo=FALSE: hide codes
+# cache=FALSE: cache data when run Knit (no need to run again)
+
+```
