@@ -1,0 +1,7 @@
+Conda & ipython update:
+
+conda clean --lock
+conda update conda # update conda and basic program
+y
+
+conda update ipython ipython-notebook ipython-qtconsole # update ipython

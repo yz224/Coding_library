@@ -34,3 +34,8 @@ apply(x, 2, mean) # Calculate by column
 apply(x, 1, mean) # Calculate by row
 apply(x,c(1,2), mean) # Calculate by each position
 
+Want to loop through list? lapply
+
+vector = vector(mode='list',5)
+lapply(vector,function(x){return(mtx[sample(1:4,size=5,replace=T),])})
+
