@@ -1,3 +1,11 @@
+Download and book
+
+http://git-scm.com/download/mac
+
+http://git-scm.com/book/en/v2
+
+——————————————————————————————————————————————————————————————————————————————
+
 Set_up
 
 ‘registration’
@@ -15,6 +23,8 @@ sudo mv git-credential-osxkeychain `dirname \`which git\``
 
 where is my git repository?: which git
 
+——————————————————————————————————————————————————————————————————————————————
+
 ‘initialize first commit’
 
 cd ‘~/your repository’
@@ -22,6 +32,7 @@ git init
 git add … 
 git commit -m ‘message’  (here -m represents ‘message’)
 git remote add origin https://github.com/yz224/Coding_library.git
+git push -u origin master
 
 why rejected?
 Someone (or you) have updated the remote branch. That causes your remote branch become ahead of your current branch. (that is your local branch)
