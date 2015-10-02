@@ -1,0 +1,7 @@
+Install:
+bash <(curl -Ls http://git.io/eUx7rg)
+
+mysql -u root -p
+!BJay2008
+SOURCE /Users/zhouyikun/Dropbox/Coding_library/SQL/sakila-db/sakila-schema.sql
+SOURCE /Users/zhouyikun/Dropbox/Coding_library/SQL/sakila-db/sakila-data.sql

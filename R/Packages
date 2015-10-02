@@ -1,0 +1,30 @@
+Packages:
+
+1. Read_data:
+
+If csv and text, no need for packages. Just use read.table, read.csv ..
+
+2. Manipulate_Data:
+
+Wide_Long: reshape2
+Tables: dplyr
+strings: stringr
+dates: lubridate
+
+3. Visualize:
+
+ggplot2
+
+4. Model:
+
+please do by your self !!! hahahah
+
+5. Report:
+
+xtable for table in HTML or Latex
+
+6. Accelerate:
+
+Rcpp: Faster!!! with c
+data.table: fast data manipulating
+parallel: parallel processing

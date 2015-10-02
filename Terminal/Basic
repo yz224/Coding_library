@@ -1,0 +1,5 @@
+pwd 
+ls -l 
+cd .. 					# go to upper 1
+cd ../../Application
+python aaa.py

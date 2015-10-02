@@ -1,5 +1,11 @@
 Difference
 
+Basic
 1. The 'tab' or 'space' matters, it means the code is in sub level (see for loop), without using '{}'
 2. Remember ':' 
-2. Counting start from 0
+3. Counting start from 0
+
+Reading data:
+
+csv:
+1. First open, then read. Not directly read
