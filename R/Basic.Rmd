@@ -1,0 +1,38 @@
+---
+title: "Basic"
+author: "Yikun Zhou"
+date: "October 2, 2015"
+output: pdf_document
+---
+
+# 1. Basic
+
+## 1.1 Setting working directory
+
+```{r}
+setwd("/Users/zhouyikun/Dropbox/Coding_library/R/")
+```
+
+## 1.2 Important basic operations
+
+####1.2.1 Print
+
+```{r}
+# Diff. from python, need ()
+print('Hello World')
+```
+
+####1.2.2 String Operation
+
+```{r}
+# String operation
+String = 'Hello'
+
+# Append (Concatenate) string and others
+paste(String,'Hi', sep = '') # Sep between strings
+
+paste(c(String, 'Hi'), 'Good') # Add 'Good' to each item of group 
+paste(c(String, 'Hi'), collapese = 'Good') # Same using collapese
+```
+
+

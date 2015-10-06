@@ -1,3 +1,5 @@
+# Find number of films of each category, and report its language
+
 select
 	count(f.title), f.title, l.name, c.name
 from
@@ -11,3 +13,5 @@ where
 group by
 	c.name
 ;
+
+
