@@ -15,3 +15,8 @@ git add --all : add all changed files
 'commit changed file'
 
 git commit -m 'message'
+
+‘looking back what commits you’ve made’
+
+git log —-pretty=oneline
+(press q to quit)
