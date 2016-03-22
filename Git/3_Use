@@ -32,3 +32,5 @@ then press enter
 ‘copy from remote and ignore the conflicts’
 git reset —-hard origin/master
 
+lllll
+
