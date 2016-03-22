@@ -21,6 +21,13 @@ git commit -m 'message'
 git log —-pretty=oneline
 (press q to quit)
 
+‘pull where there is some conflicts, and you have to write some notes’
+press "i"
+write your merge message
+press "esc"
+write ":wq"
+then press enter
+
 ‘copy from remote and ignore the conflicts’
 git reset —-hard origin/master
 
