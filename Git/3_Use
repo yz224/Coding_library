@@ -21,4 +21,6 @@ git commit -m 'message'
 git log —-pretty=oneline
 (press q to quit)
 
-llll
+‘copy from remote and ignore the conflicts’
+git reset —-hard origin/master
+
