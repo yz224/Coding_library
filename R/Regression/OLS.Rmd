@@ -1,0 +1,90 @@
+---
+title: "OLS"
+author: "Yikun Zhou"
+date: "October 10, 2015"
+output: html_document
+---
+
+#In this file I will try to calculate the OLS estimator using a generated sample
+
+### Data generation
+```{r}
+# Load necessary library
+library(dplyr)
+
+# Generate X
+n=100
+x0 <- rep(1,n)
+x1 <- seq(from = -10, to = 20, length = n)
+x2 <- rnorm(n, 0, 10)
+X <- cbind(x0, x1, x2)
+
+# Generate Y
+y <- seq(from = 30, to = 80, length = n) + rnorm(n)
+
+# Data
+Data <- cbind(y,X)
+```
+
+### Estimation
+
+```{r}
+# OLS estimator
+OLS_Beta <- function(X,Y){
+  B_hat = solve(t(X) %*% X) %*% t(X) %*% Y
+  return(B_hat)
+}
+
+# Estimate Beta
+B_hat <- OLS_Beta(X, y)
+# Duplicate
+
+
+# Estimate Y
+Y_hat <- X %*% B_hat
+
+# Estimate Error
+e_hat <- y - Y_hat
+
+# Estimate Sigma
+Sig_hat2 <- sum(e_hat ^ 2) / (n - 3)
+
+# Beta covariance-matrix
+B_var <- Sig_hat2 * solve(t(X) %*% X)
+
+B_sig_0 <- sqrt(B_var[1, 1])
+B_sig_1 <- sqrt(B_var[2, 2])
+B_sig_2 <- sqrt(B_var[3, 3])
+
+# T-test for beta and p-value
+df <- n - 3
+t_0 <- B_hat[1] / B_sig_0
+t_1 <- B_hat[2] / B_sig_1
+t_2 <- B_hat[3] / B_sig_2
+
+
+
+```
+
+### Test and Compare
+
+```{r}
+# Calculate with package
+lm_OLS <- lm(y ~ x1 + x2, data = as.data.frame(Data))
+summary(lm_OLS)
+
+# Duplucate
+lm_OLS_d <- lm(y ~ x1 + x2, data = as.data.frame(rbind(Data, Data)))
+summary(lm_OLS_d)
+
+# Compare each estimator
+lm_OLS$coeff
+B_hat
+
+head(lm_OLS$fitted)
+head(Y_hat)
+
+head(lm_OLS$residual)
+head(Sig_hat)
+```
+
