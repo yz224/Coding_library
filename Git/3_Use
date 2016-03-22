@@ -1,4 +1,3 @@
-ahhhhh
 3_Use
 
 'go to local repo'
@@ -17,10 +16,14 @@ git add --all : add all changed files
 
 git commit -m 'message'
 
-‘looking back what commits you’ve made’
+'version retrive'
 
-git log —-pretty=oneline
-(press q to quit)
+git log —-pretty=oneline: (press q to quit)
+git reflog: look at all versions
+git reset --hard d424b70
+git reset --hard HEAD^ 
+git reset --hard HEAD~1 
+git reset —-hard origin/master: copy from remote and ignore the conflicts
 
 ‘pull where there is some conflicts, and you have to write some notes’
 press "i"
@@ -29,8 +32,8 @@ press "esc"
 write ":wq"
 then press enter
 
-‘copy from remote and ignore the conflicts’
-git reset —-hard origin/master
 
-lllll
+
+
+
 
