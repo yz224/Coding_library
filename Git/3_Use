@@ -16,6 +16,15 @@ git add --all : add all changed files
 
 git commit -m 'message'
 
+‘Look up changes this time’
+
+git diff HEAD -- Git/3_Use
+
+'Delete this change'
+
+git reset HEAD Git/3_Use: go to before-add stage
+git checkout -- Git/3_Use: delete all change this time
+
 'version retrive'
 
 git log —-pretty=oneline: (press q to quit)
@@ -26,12 +35,12 @@ git reset --hard HEAD~1
 git reset —-hard origin/master: copy from remote and ignore the conflicts
 
 ‘pull where there is some conflicts, and you have to write some notes’
+
 press "i"
 write your merge message
 press "esc"
 write ":wq"
 then press enter
-
 
 
 
