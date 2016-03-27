@@ -1,5 +1,8 @@
-list = [1,2,5,6,7,8,8,8,8]
-s = set(list)
-s.add(7)
-s.remove(1)
-print s
+def calc(numbers):
+	s = 0
+	for i in numbers:
+		s = s + i
+	print s
+
+num = [1, 2, 3, 4]
+calc(num)

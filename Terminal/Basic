@@ -1,5 +1,7 @@
 pwd 
 ls -l 
+ls -ah					# watch all the files
 cd .. 					# go to upper 1
 cd ../../Application
 python aaa.py
+cat test.txt			# show content
